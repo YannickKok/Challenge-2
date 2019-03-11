@@ -3,7 +3,7 @@ TweenMax.to("#analog", 8, {
   ease:Linear.easeNone,
   repeat:-1})
 
-var maanden = ['jan', 'feb', 'Maart', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+var maanden = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 var myVar = setInterval(function() {
     myTimer();
