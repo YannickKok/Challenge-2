@@ -4,17 +4,18 @@ body {
 }
 
 .container {
-  min-width: 550px;
-  margin: 100px auto;
+  min-width: 200px;
+  max-width: 250px;
+
   border: 20px solid #e1e1e1;
   background-color: #ccc;
-  text-align: center;
   border-radius: 20px;
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 25px;
   position: relative;
-  text-transform: ;
+  margin: 25px;
   text-shadow: 0 1px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902);
 }
+

@@ -6,8 +6,10 @@ var myVar = setInterval(function() {
     myTimer();
   }, 1000);
 
+  var timeline = new TimelineMax({repeat: -1});
+  timeline.call(myTimer)
+  .to('#clock', 1, { left: 65 ,repeat: -1});
 
-  
   function myTimer() {
     var today = new Date();
     
@@ -19,5 +21,8 @@ var myVar = setInterval(function() {
      ' / ' + (maanden[today.getMonth()]) +
       ' / ' + today.getFullYear(); 
 
+
+
+
 }
-//wow
+
