@@ -1,4 +1,4 @@
-TweenMax.to("#analog", 86400, {
+TweenMax.to("#analog", 8, {
   rotation: 360,
   ease:Linear.easeNone,
   repeat:-1})
