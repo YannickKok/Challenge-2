@@ -1,4 +1,7 @@
-
+TweenMax.to("#analog", 8, {
+  rotation: 360,
+  ease:Linear.easeNone,
+  repeat:-1})
 
 var maanden = ['jan', 'feb', 'Maart', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
 
@@ -9,6 +12,7 @@ var myVar = setInterval(function() {
   var timeline = new TimelineMax({repeat: -1});
   timeline.call(myTimer)
   .to('#clock', 1, { left: 65 ,repeat: -1});
+
 
   function myTimer() {
     var today = new Date();
