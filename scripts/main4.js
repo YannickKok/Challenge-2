@@ -14,14 +14,12 @@ var myVar = setInterval(function() {
 
   function myTimer() {
     var today = new Date();
+    var options = { timeZone: "America/Los_Angeles", timeZoneName: 'short', hour12:false };
     
-    document.getElementById('clock4').innerHTML = ('0' + today.getHours()).slice(-2) +  //'0' + .slice(-2) zorgt er voor dat er leading zero's komen
-    ' : ' + ('0' + (today.getMinutes())).slice(-2) +
-     ' : ' + ('0' + (today.getSeconds())).slice(-2);
+    
+    document.getElementById('clock4').innerHTML = today.toLocaleTimeString('en-US', options)
 
-    document.getElementById('date4').innerHTML = ('0' + today.getDate()).slice(-2) +
-     ' / ' + (maanden[today.getMonth()]) +
-      ' / ' + today.getFullYear(); 
+    document.getElementById('date4').innerHTML = today.toLocaleDateString('en-US', options)
 
       var hms = ('0' + today.getHours()).slice(-2) + 
       ' : ' + ('0' + (today.getMinutes())).slice(-2) +
