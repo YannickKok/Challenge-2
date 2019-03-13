@@ -1,5 +1,4 @@
 
-
 var maanden = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; //Engelse maanden want SpaceX spreekt engels
 
 var myVar = setInterval(function() {
@@ -11,16 +10,16 @@ var myVar = setInterval(function() {
   
   
   timeline.call(myTimer)
-  .to('#clock', 1, { left: 65 ,repeat: -1, yoyo:true, ease:Linear.easeNone,}); //Gekke animatie om de depressieve mars kolonisten op te vrolijken
+  .to('#clock4', 1, { left: 65 ,repeat: -1, yoyo:true, ease:Linear.easeNone,}); //Gekke animatie om de depressieve mars kolonisten op te vrolijken
 
   function myTimer() {
     var today = new Date();
     
-    document.getElementById('clock').innerHTML = ('0' + today.getHours()).slice(-2) +  //'0' + .slice(-2) zorgt er voor dat er leading zero's komen
+    document.getElementById('clock4').innerHTML = ('0' + today.getHours()).slice(-2) +  //'0' + .slice(-2) zorgt er voor dat er leading zero's komen
     ' : ' + ('0' + (today.getMinutes())).slice(-2) +
      ' : ' + ('0' + (today.getSeconds())).slice(-2);
 
-    document.getElementById('date').innerHTML = ('0' + today.getDate()).slice(-2) +
+    document.getElementById('date4').innerHTML = ('0' + today.getDate()).slice(-2) +
      ' / ' + (maanden[today.getMonth()]) +
       ' / ' + today.getFullYear(); 
 
@@ -35,18 +34,17 @@ var myVar = setInterval(function() {
 
       console.log(secondsdegrees); //de console krijgt de graden binnen als test, kan weggehaald worden
       
-      TweenMax.to("#analog", 86400,  { //86400 seconden in 24 uur
+      TweenMax.to("#analog4", 86400,  { //86400 seconden in 24 uur
         
         rotation: -360, //het wiel der tijd draait 360 graden. De - is zodat het wiel naar rechts draait, net als een echte klok. Uit tests is gebleken dat mensen dat natuurlijker vinden.
         
         ease:Linear.easeNone, //linear ease effect
         repeat:-1, }) //oneindige herhaling
-        TweenMax.set("#analog", { 
+        TweenMax.set("#analog4", { 
           rotation: -secondsdegrees //seconden gedeeld door 240 + afronding zorgt voor de juiste graad. De - is noodzakelijk voor de juiste tijdweergave. Anders is 15:00, 09:00 uur op de afbeelding.
 
         })
 
 
 }
-
 
