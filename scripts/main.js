@@ -17,12 +17,12 @@ var myVar = setInterval(function() {
     var options = { timeZone: "America/New_York",  hour12:false };
     
     document.getElementById('clock').innerHTML = ('0' + today.getHours()).slice(-2) +  //'0' + .slice(-2) zorgt er voor dat er leading zero's komen
-    ' : ' + ('0' + (today.getMinutes())).slice(-2) +
-     ' : ' + ('0' + (today.getSeconds())).slice(-2);
+    ':' + ('0' + (today.getMinutes())).slice(-2) +
+     ':' + ('0' + (today.getSeconds())).slice(-2);
 
     document.getElementById('date').innerHTML = ('0' + today.getDate()).slice(-2) +
-     ' / ' + (maanden[today.getMonth()]) +
-      ' / ' + today.getFullYear(); 
+     '/' + (maanden[today.getMonth()]) +
+      '/' + today.getFullYear(); 
 
       var hms = ('0' + today.getHours()).slice(-2) + 
       ' : ' + ('0' + (today.getMinutes())).slice(-2) +
@@ -32,16 +32,16 @@ var myVar = setInterval(function() {
       //CLOCK 2
 
       document.getElementById('clock2').innerHTML = ('0' + today.getUTCHours()).slice(-2) +  //'0' + .slice(-2) zorgt er voor dat er leading zero's komen
-      ' : ' + ('0' + (today.getUTCMinutes())).slice(-2) +
-       ' : ' + ('0' + (today.getUTCSeconds())).slice(-2);
+      ':' + ('0' + (today.getUTCMinutes())).slice(-2) +
+       ':' + ('0' + (today.getUTCSeconds())).slice(-2);
   
       document.getElementById('date2').innerHTML = ('0' + today.getUTCDate()).slice(-2) +
-       ' / ' + (maanden[today.getUTCMonth()]) +
-        ' / ' + today.getUTCFullYear(); 
+       '/' + (maanden[today.getUTCMonth()]) +
+        '/' + today.getUTCFullYear(); 
   
         var hms = ('0' + today.getUTCHours()).slice(-2) + 
-        ' : ' + ('0' + (today.getUTCMinutes())).slice(-2) +
-         ' : ' + ('0' + (today.getUTCSeconds())).slice(-2);   
+        ':' + ('0' + (today.getUTCMinutes())).slice(-2) +
+         ':' + ('0' + (today.getUTCSeconds())).slice(-2);   
         var a = hms.split(':'); 
 
         //CLOCK3
