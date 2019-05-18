@@ -39,6 +39,12 @@ margin-bottom: -30px;
 
 }
 
+#clock {
+  width: 150px;
+  margin-left: 0px;
+  margin-right: -400px;
+}
+
 /************Small**************/
 @media only screen and (min-width: 300px) and (max-width: 649px) {
   .container {
@@ -158,9 +164,8 @@ h1 {
 h1 {
   font-size: 27px;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+
+
   color:rgb(240, 240, 240);
   text-shadow: 2px 2px black;
   }
